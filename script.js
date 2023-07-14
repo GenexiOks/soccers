@@ -39,8 +39,37 @@ const game = {
   },
 };
 
+//1.Two team
 const players1 = [...game.players[0]];
-
 const players2 = [...game.players[1]];
 
-console.log(players2);
+//2.goalkeeper and fieldPlayes
+const [goalKeeper, ...fieldPlayers] = players1;
+
+//3.All players
+const allPlayers = players1.concat(players2);
+
+//4. players Total 'Marcelo', 'Isco', 'Asensio', 'Diaz', 'Odriozola'
+const players1Total = players1.concat(
+  'Marcelo',
+  'Isco',
+  'Asensio',
+  'Diaz',
+  'Odriozola'
+);
+
+//5. Game odds Mingueza', 'Messi', 'Modrich'
+const { team1, draw, team2 } = game.odds;
+
+//6. printGoal
+const printGoal = function (...players) {
+  let a = players;
+  console.log(a);
+  for (let i = 0; i < players.length; i++) {
+    a = players;
+    console.log(a);
+  }
+};
+printGoal('Mingueza', 'Messi', 'Modrich');
+printGoal(game.scored);
+//7.'
